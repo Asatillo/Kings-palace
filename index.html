@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+      <header>
+        <nav>
+          <ul>
+            <li><a id="home" href="#"> Home </a></li>
+            <li><a href="#"> +MAP </a></li>
+            <li><a href="#"> Continue </a></li>
+            <li class="timer">00:00</li>
+            <li><a class="user"  href="#"></a></li>
+          </ul>
+        </nav>
+      </header>
+    <div class="main">
+      <div class="table">
+        <table></table>
+      </div>
+      <div id="toHide">
+        <div class="text">
+          Once upon a time, King Unnamed of Nowhereland was both smiling and
+          crying at the same time. He was smiling because his enormous brand-new
+          palace with many spacious rooms and corridors has just been finished.
+          He is also crying as these rooms need to be illuminated and kept warm,
+          but the ongoing increase of utility costs affect him as well. So now
+          it's time to think about the placement of the palace's light bulbs. We
+          need to place them so that everything is properly lit, but we cannot
+          install any unnecessary bulbs.
+        </div>
+        <hr />
+        <label for="fname">Your name:</label>
+        <input type="text" id="fname" name="fname" /><br /><br />
+        <div class="text"><b>Choose mode:</b></div>
+        <div class="buttons">
+            <button class="button button1" id="easy" onclick="tableCreate('easy')">EASY</button>
+            <button class="button button2" id="advanced" onclick="tableCreate('advanced')">ADVANCED</button>
+            <button class="button button3" id="extreme" onclick="tableCreate('extreme')">EXTREME</button>
+        </div>
+        <hr />
+        <div class="text"><p>Previous players scored</p></div>
+      </div>
+      <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Level</th>
+                <th>Time</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody id="score-sheet">
+        </tbody>
+    </table>
+    </div>
+  </body>
+  <script src="levels.js"></script>
+  <script src="script.js"></script>
+</html>
